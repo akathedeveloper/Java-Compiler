@@ -27,14 +27,14 @@ status-code: 200
 - filename: Provided filename.
 - input: Base64-encoded input strings.
 
-    Compilation Failure: HTTP 400
+Compilation Failure: HTTP 400
 - status-code: 400
 - message: "Compilation failed"
 - output: Base64-encoded stderr output.
 - code: Original Base64-encoded code.
 - filename: Provided filename.
 
-    Execution Failure: HTTP 400
+Execution Failure: HTTP 400
 - status-code: 400
 - message: "Execution failed"
 - output: Base64-encoded stderr output.
@@ -42,7 +42,7 @@ status-code: 200
 - filename: Provided filename.
 - input: Base64-encoded input strings.
 
-    Compilation/Execution Error: HTTP 500
+Compilation/Execution Error: HTTP 500
 - status-code: 500
 - message: "Compilation/Execution error"
 - output: Base64-encoded error message.
