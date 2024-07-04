@@ -19,33 +19,33 @@ Body: JSON object
 
 #### Response
 
-    Success: HTTP 200
-        status-code: 200
-        message: "success"
-        output: Base64-encoded stdout output.
-        code: Original Base64-encoded code.
-        filename: Provided filename.
-        input: Base64-encoded input strings.
+Success: HTTP 200
+status-code: 200
+- message: "success"
+- output: Base64-encoded stdout output.
+- code: Original Base64-encoded code.
+- filename: Provided filename.
+- input: Base64-encoded input strings.
 
     Compilation Failure: HTTP 400
-        status-code: 400
-        message: "Compilation failed"
-        output: Base64-encoded stderr output.
-        code: Original Base64-encoded code.
-        filename: Provided filename.
+- status-code: 400
+- message: "Compilation failed"
+- output: Base64-encoded stderr output.
+- code: Original Base64-encoded code.
+- filename: Provided filename.
 
     Execution Failure: HTTP 400
-        status-code: 400
-        message: "Execution failed"
-        output: Base64-encoded stderr output.
-        code: Original Base64-encoded code.
-        filename: Provided filename.
-        input: Base64-encoded input strings.
+- status-code: 400
+- message: "Execution failed"
+- output: Base64-encoded stderr output.
+- code: Original Base64-encoded code.
+- filename: Provided filename.
+- input: Base64-encoded input strings.
 
     Compilation/Execution Error: HTTP 500
-        status-code: 500
-        message: "Compilation/Execution error"
-        output: Base64-encoded error message.
-        code: Original Base64-encoded code.
-        filename: Provided filename.
-        input: Base64-encoded input strings (if any).
+- status-code: 500
+- message: "Compilation/Execution error"
+- output: Base64-encoded error message.
+- code: Original Base64-encoded code.
+- filename: Provided filename.
+- input: Base64-encoded input strings (if any).
