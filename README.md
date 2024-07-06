@@ -40,7 +40,7 @@ Execution Failure: HTTP 400
 - output: Base64-encoded stderr output.
 - code: Original Base64-encoded code.
 - filename: Provided filename.
-- input: Base64-encoded input strings.
+- input: Base64-encoded input strings
 
 Compilation/Execution Error: HTTP 500
 - status-code: 500
